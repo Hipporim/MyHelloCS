@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnHello = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnHello
+            // 
+            this.btnHello.Font = new System.Drawing.Font("한컴 고딕", 20F);
+            this.btnHello.Location = new System.Drawing.Point(30, 40);
+            this.btnHello.Name = "btnHello";
+            this.btnHello.Size = new System.Drawing.Size(167, 67);
+            this.btnHello.TabIndex = 0;
+            this.btnHello.Text = "안녕O3O";
+            this.btnHello.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(238, 146);
+            this.Controls.Add(this.btnHello);
             this.Name = "Form1";
             this.Text = "마이헬로우";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -43,6 +55,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnHello;
     }
 }
 
